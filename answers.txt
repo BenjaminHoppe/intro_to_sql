@@ -1,0 +1,79 @@
+-------------------
+-------------------
+1:
+SELECT name FROM robots WHERE source='Star Wars';
+
+Returns: C3P0, R2D2
+-------------------
+2:
+SELECT name FROM robots WHERE personality='anxious';
+
+Returns: C3P0
+-------------------
+3:
+SELECT name FROM recipes WHERE nut_free=true;
+
+Returns:
+Butternut Squash Bake,
+Vegetarian Bibimbap,
+French Veggie Loaf,
+Quinoa and Black Beans,
+Juicy Roasted Chicken,
+Garlic Green Beans,
+Stout Slow Cooker Corned Beef and Veggies,
+-------------------
+4:
+SELECT COUNT FROM recipes WHERE gluten_free=true AND vegetarian=false;
+
+Returns: 2
+-------------------
+5:
+SELECT MAX(number_of_legs) FROM animals;
+SELECT name FROM animals WHERE number_of_legs=8;
+
+Returns: Octopus
+-------------------
+6:
+SELECT name FROM board_games
+ORDER BY mins_to_play ASC;
+
+Returns: Arkham Horror
+-------------------
+7:
+SELECT name FROM recipes
+ORDER BY minutes_required ASC;
+
+Returns: Stout Slow Cooker Corned Beef and Veggies
+-------------------
+8:
+SELECT name FROM robots
+ORDER BY name ASC;
+
+Returns: Marvin,
+Mr. Butlertron
+-------------------
+9:
+SELECT name FROM board_games
+WHERE max_players=8;
+
+Returns: Arkham Horror
+-------------------
+10:
+SELECT name FROM animals
+WHERE swimming AND egg_laying;
+
+Returns: octopus,
+duck
+-------------------
+11:
+SELECT name FROM animals
+WHERE swimming AND egg_laying AND flying=false;
+
+Returns: Octopus
+-------------------
+SELECT name FROM board_games
+ORDER BY max_players ASC;
+
+Returns: Cards Against Humanity
+-------------------
+-------------------
